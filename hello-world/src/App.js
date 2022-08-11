@@ -18,11 +18,15 @@ import styles from "./appStyles.module.css";
 import Form from "./components/Form";
 import MoutingLifeCycleA from "./components/MountingLifeCycleA";
 import UpdatingLifeCycleA from "./components/UpdatingLifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
 
 function App() {
 	return (
 		<div className="App">
-			<UpdatingLifeCycleA />
+			<Table />
+			{/* <FragmentDemo /> */}
+			{/* <UpdatingLifeCycleA /> */}
 			{/* <MoutingLifeCycleA /> */}
 			{/* <Form /> */}
 			{/* <h1 className="error">Error</h1> */}
