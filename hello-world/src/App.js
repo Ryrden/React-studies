@@ -17,11 +17,13 @@ import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
 import MoutingLifeCycleA from "./components/MountingLifeCycleA";
+import UpdatingLifeCycleA from "./components/UpdatingLifeCycleA";
 
 function App() {
 	return (
 		<div className="App">
-			<MoutingLifeCycleA />
+			<UpdatingLifeCycleA />
+			{/* <MoutingLifeCycleA /> */}
 			{/* <Form /> */}
 			{/* <h1 className="error">Error</h1> */}
 			{/* <h1 className={styles.success}>Success</h1> */}
