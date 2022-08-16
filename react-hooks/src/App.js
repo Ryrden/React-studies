@@ -7,6 +7,8 @@ import HookCounterThree from "./components/HookCounterThree";
 import HookCounterFour from "./components/HookCounterFour";
 import ClassCounterOne from "./components/ClassCounterOne";
 import HookCounterOne from "./components/HookCounterOne";
+import ClassMouse from "./components/ClassMouse";
+import HookMouse from "./components/HookMouse";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -20,7 +22,9 @@ import HookCounterOne from "./components/HookCounterOne";
 function App() {
 	return (
 		<div className="App">
-			<HookCounterOne />
+			<HookMouse />
+			{/* <ClassMouse /> */}
+			{/* <HookCounterOne /> */}
 			{/* <ClassCounterOne /> */}
 			{/* <HookCounterFour /> */}
 			{/* <HookCounterThree /> */}
