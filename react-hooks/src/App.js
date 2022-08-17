@@ -9,6 +9,7 @@ import ClassCounterOne from "./components/ClassCounterOne";
 import HookCounterOne from "./components/HookCounterOne";
 import ClassMouse from "./components/ClassMouse";
 import HookMouse from "./components/HookMouse";
+import MouseContainer from "./components/MouseContainer";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -22,7 +23,8 @@ import HookMouse from "./components/HookMouse";
 function App() {
 	return (
 		<div className="App">
-			<HookMouse />
+			<MouseContainer />
+			{/* <HookMouse /> */}
 			{/* <ClassMouse /> */}
 			{/* <HookCounterOne /> */}
 			{/* <ClassCounterOne /> */}
