@@ -12,6 +12,7 @@ import HookMouse from "./components/HookMouse";
 import MouseContainer from "./components/MouseContainer";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
+import DataFetching from "./components/DataFetching";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -25,8 +26,9 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 function App() {
 	return (
 		<div className="App">
-			<IntervalClassCounter />
-			<IntervalHookCounter />
+			<DataFetching />
+			{/* <IntervalClassCounter /> */}
+			{/* <IntervalHookCounter /> */}
 			{/* <MouseContainer /> */}
 			{/* <HookMouse /> */}
 			{/* <ClassMouse /> */}
