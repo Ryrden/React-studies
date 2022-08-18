@@ -13,6 +13,7 @@ import MouseContainer from "./components/MouseContainer";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
+import ComponentC from "./components/ComponentC";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -23,10 +24,17 @@ import DataFetching from "./components/DataFetching";
   6. When dealing with objects or arrays, always make sure to spread your state variable and then call the setter function
 */
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<DataFetching />
+			<UserContext.Provider value={"Fellas"}>
+				<ChannelContext.Provider value={"OpusSoftware"}>
+					<ComponentC />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
+			{/* <DataFetching /> */}
 			{/* <IntervalClassCounter /> */}
 			{/* <IntervalHookCounter /> */}
 			{/* <MouseContainer /> */}
