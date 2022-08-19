@@ -15,6 +15,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CouterTwo";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -30,7 +31,8 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<CounterOne />
+			<CounterTwo />
+			{/* <CounterOne /> */}
 			{/* <UserContext.Provider value={"Fellas"}>
 				<ChannelContext.Provider value={"OpusSoftware"}>
 					<ComponentC />
