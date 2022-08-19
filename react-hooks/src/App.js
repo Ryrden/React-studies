@@ -16,6 +16,7 @@ import DataFetching from "./components/DataFetching";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CouterTwo";
+import CounterThree from "./components/CounterThree";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -31,7 +32,8 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<CounterTwo />
+			<CounterThree />
+			{/* <CounterTwo /> */}
 			{/* <CounterOne /> */}
 			{/* <UserContext.Provider value={"Fellas"}>
 				<ChannelContext.Provider value={"OpusSoftware"}>
