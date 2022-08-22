@@ -20,6 +20,7 @@ import CounterThree from "./components/CounterThree";
 import DataFetchingOne from "./components/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingTwo";
 import ParentComponent from "./components/ParentComponent";
+import Counter from "./components/Counter";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -30,12 +31,19 @@ import ParentComponent from "./components/ParentComponent";
   6. When dealing with objects or arrays, always make sure to spread your state variable and then call the setter function
 */
 
+/* Resume of useCallback and useMemo
+
+	if you want cache the function, you can use useCallback hook
+	else if you want to cache the value, you can use useMemo hook
+*/
+
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<ParentComponent />
+			<Counter />
+			{/* <ParentComponent /> */}
 			{/* <DataFetchingTwo /> */}
 			{/* <DataFetchingOne /> */}
 			{/* <CounterThree /> */}
