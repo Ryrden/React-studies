@@ -24,6 +24,7 @@ import Counter from "./components/Counter";
 import FocusInput from "./components/FocusInput";
 import ClassTimer from "./components/ClassTimer";
 import HookTimer from "./components/HookTimer";
+import LayoutParent from "./components/LayoutParent";
 /* Resume of useState
 
   1.The useState hooks lets you add state to functional components.
@@ -45,9 +46,10 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<HookTimer />
+			<LayoutParent />
+			{/* <HookTimer />
 			<ClassTimer />
-			<FocusInput />
+			<FocusInput /> */}
 			{/* <Counter /> */}
 			{/* <ParentComponent /> */}
 			{/* <DataFetchingTwo /> */}
