@@ -24,6 +24,7 @@ import Counter from "./components/Counter";
 import FocusInput from "./components/FocusInput";
 import ClassTimer from "./components/ClassTimer";
 import HookTimer from "./components/HookTimer";
+import IRParent from "./components/IRParent";
 import LayoutParent from "./components/LayoutParent";
 /* Resume of useState
 
@@ -46,7 +47,8 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<LayoutParent />
+			<IRParent />
+			{/* <LayoutParent /> */}
 			{/* <HookTimer />
 			<ClassTimer />
 			<FocusInput /> */}
