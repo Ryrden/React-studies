@@ -10,6 +10,10 @@ export const ChildA = () => {
 	);
 };
 
+//This fix the unnecessary re-render caused by
+//Context passing prop
+export const MemoizedChildA = React.memo(ChildA);
+
 export const ChildB = () => {
 	console.log("child B Render");
 	return (
@@ -20,6 +24,9 @@ export const ChildB = () => {
 	);
 };
 
+//here, childC is flagged to re-render because
+//the context value is re-created every time
+//and the child component are consuming the context
 export const ChildC = () => {
 	const count = useContext(CountContext);
 	console.log("child C Render");
