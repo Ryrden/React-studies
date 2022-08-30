@@ -12,11 +12,13 @@ import {ParentTwo} from "./components/Optimization/ParentTwo";
 import {ParentThree} from "./components/IncorrectOptimization/ParentThree";
 import {ParentFour} from "./components/IncorrectOptimization/ParentFour";
 import {ParentFive} from "./components/IncorrectOptimization/ParentFive";
+import {ContextParent} from "./components/Context/ContextParent";
 
 function App() {
 	return (
 		<div className="App">
-			<ParentFive />
+			<ContextParent />
+			{/* <ParentFive /> */}
 			{/* <ParentFour /> */}
 			{/* <ParentThree /> */}
 			{/* <ParentTwo /> */}
