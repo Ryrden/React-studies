@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useMemo, useCallback} from "react";
 import {MemoizedChildFive} from "./ChildFive";
 
 export const ParentFive = () => {
@@ -16,16 +16,25 @@ export const ParentFive = () => {
 
 	const handleClick = () => {};
 
+	const memoizedHandleClick = useCallback(handleClick, []);
+
 	const person = {
 		fname: "Bruce",
 		lname: "Wayne",
 	};
 
+	const memoizedPerson = useMemo(() => person, []);
+
+	/* To fix the unnecessary re-render caused by
+    passing props as reference typem we can 
+    use useMemo to value objects and arrays and 
+    useCallback to value functions */
+
 	return (
 		<div>
 			<button onClick={() => setCount((c) => c + 1)}>Count - {count}</button>
 			<button onClick={() => setName("OpusSoftware")}>Change Name</button>
-			<MemoizedChildFive name={name} person={person} handleClick={handleClick} />
+			<MemoizedChildFive name={name} person={memoizedPerson} handleClick={memoizedHandleClick} />
 		</div>
 	);
 };
