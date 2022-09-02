@@ -7,7 +7,6 @@ import {NavLink} from "react-router-dom";
 	that are links to other parts of the application.
 */
 
-
 export const NavBar = () => {
 	const navLinkStyles = ({isActive}) => {
 		return {
@@ -17,12 +16,15 @@ export const NavBar = () => {
 	};
 
 	return (
-		<nav>
+		<nav className="primary-nav">
 			<NavLink style={navLinkStyles} to="/">
 				Home
 			</NavLink>
 			<NavLink style={navLinkStyles} to="/about">
 				About
+			</NavLink>
+			<NavLink style={navLinkStyles} to="/products">
+				Products
 			</NavLink>
 		</nav>
 	);
