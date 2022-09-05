@@ -1,5 +1,6 @@
 // import {Link} from "react-router-dom";
 import {NavLink} from "react-router-dom";
+import {useAuth} from "./auth";
 
 /*
 	Why NavLink?
@@ -15,6 +16,8 @@ export const NavBar = () => {
 		};
 	};
 
+	const auth = useAuth();
+
 	return (
 		<nav className="primary-nav">
 			<NavLink style={navLinkStyles} to="/">
@@ -26,6 +29,14 @@ export const NavBar = () => {
 			<NavLink style={navLinkStyles} to="/products">
 				Products
 			</NavLink>
+			<NavLink style={navLinkStyles} to="/profile">
+				Profile
+			</NavLink>
+			{!auth.user && (
+				<NavLink style={navLinkStyles} to="/login">
+					Login
+				</NavLink>
+			)}
 		</nav>
 	);
 };
